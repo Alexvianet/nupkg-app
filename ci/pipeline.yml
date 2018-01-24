@@ -1,14 +1,53 @@
+resource_types:
+- name: nexus-repo-nuget
+  type: docker-image
+  source:
+    repository: docker-registry-gdc.axadmin.net/nexus-repo-nuget
+
 resources:
-- name: HelloWorldDotNetCore
+- name: nupkg-app
   type: git
   source:
-    uri: https://github.com/Alexvianet/HelloWorldDotNetCore.git
+    uri: https://github.com/Alexvianet/nupkg-app.git
     branch: master
 
+- name: nexus-nuget
+  type: nexus-repo-nuget
+  source:
+    repository: nuget-public
+    package: dotnetapp
+
 jobs:
-- name: hello-world-app
+- name: build-and-save-to-artifactory
   plan:
-  - get: HelloWorldDotNetCore
+  - get: nupkg-app
+  - task: build-nupkg-app
+    file: build.yml
+
+
+- name: trigger-when-new-file-is-added-to-artifactory
+  serial: true
+  public: true
+  plan:
+  - get: file-repository
     trigger: true
-  - task: tests
-    file: HelloWorldDotNetCore/build.yml
+    passed:
+      - build-and-save-to-artifactory
+  - task: use-new-file
+    config:
+      platform: linux
+      image_resource:
+        type: docker-image
+        source:
+          repository: ubuntu
+          tag: "latest"
+      inputs:
+      - name: file-repository
+      run:
+        path: sh
+        args:
+        - -exc
+        - |
+          export DATESTRING=$(date +"%Y%m%d")
+          ls -la file-repository
+          cat ./file-repository/myapp*.txt

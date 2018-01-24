@@ -14,7 +14,7 @@
     </dependencies>
   </metadata>
   <files>
-    <file src="/home/alexg/Downloads/dotnet-docker-samples/dotnetapp-prod/bin/Debug/netcoreapp2.0/dotnetapp.runtimeconfig.json" target="lib/netcoreapp2.0/dotnetapp.runtimeconfig.json" />
-    <file src="/home/alexg/Downloads/dotnet-docker-samples/dotnetapp-prod/bin/Debug/netcoreapp2.0/dotnetapp.dll" target="lib/netcoreapp2.0/dotnetapp.dll" />
+    <file src="/home/alexg/Downloads/nupkg-app/bin/Debug/netcoreapp2.0/dotnetapp.runtimeconfig.json" target="lib/netcoreapp2.0/dotnetapp.runtimeconfig.json" />
+    <file src="/home/alexg/Downloads/nupkg-app/bin/Debug/netcoreapp2.0/dotnetapp.dll" target="lib/netcoreapp2.0/dotnetapp.dll" />
   </files>
 </package>

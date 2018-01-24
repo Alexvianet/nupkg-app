@@ -6,8 +6,8 @@ image_resource:
     repository: microsoft/dotnet
 
 inputs:
-- name: HelloWorldDotNetCore
+- name: nupkg-app
 
 run:
   path: sh
-  args: ["HelloWorldDotNetCore/ci/build.sh"]
+  args: ["nupkg-app/ci/build.sh"]

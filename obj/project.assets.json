@@ -670,11 +670,11 @@
   "project": {
     "version": "1.0.1",
     "restore": {
-      "projectUniqueName": "/home/alexg/Downloads/dotnet-docker-samples/dotnetapp-prod/dotnetapp.csproj",
+      "projectUniqueName": "/home/alexg/Downloads/nupkg-app/dotnetapp.csproj",
       "projectName": "dotnetapp",
-      "projectPath": "/home/alexg/Downloads/dotnet-docker-samples/dotnetapp-prod/dotnetapp.csproj",
+      "projectPath": "/home/alexg/Downloads/nupkg-app/dotnetapp.csproj",
       "packagesPath": "/home/alexg/.nuget/packages/",
-      "outputPath": "/home/alexg/Downloads/dotnet-docker-samples/dotnetapp-prod/obj/",
+      "outputPath": "/home/alexg/Downloads/nupkg-app/obj/",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "/usr/share/dotnet/sdk/NuGetFallbackFolder"

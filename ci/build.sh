@@ -1,4 +1,4 @@
 #!/bin/bash
 cd nupkg-app
-rm -f *.nupkg
-dotnet pack -o .
+rm -f /tmp/build/*.nupkg
+dotnet pack -o /tmp/build/

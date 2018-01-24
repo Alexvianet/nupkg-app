@@ -24,7 +24,6 @@ jobs:
   plan:
   - get: nupkg-app
     trigger: true
-
   - task: build-nupkg-app
     file: nupkg-app/build.yml
   - put: nexus-nuget

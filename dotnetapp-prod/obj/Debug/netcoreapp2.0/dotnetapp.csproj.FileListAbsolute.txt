@@ -1,0 +1,10 @@
+/home/alexg/Downloads/dotnet-docker-samples/dotnetapp-prod/bin/Debug/netcoreapp2.0/dotnetapp.deps.json
+/home/alexg/Downloads/dotnet-docker-samples/dotnetapp-prod/bin/Debug/netcoreapp2.0/dotnetapp.runtimeconfig.json
+/home/alexg/Downloads/dotnet-docker-samples/dotnetapp-prod/bin/Debug/netcoreapp2.0/dotnetapp.runtimeconfig.dev.json
+/home/alexg/Downloads/dotnet-docker-samples/dotnetapp-prod/bin/Debug/netcoreapp2.0/dotnetapp.dll
+/home/alexg/Downloads/dotnet-docker-samples/dotnetapp-prod/bin/Debug/netcoreapp2.0/dotnetapp.pdb
+/home/alexg/Downloads/dotnet-docker-samples/dotnetapp-prod/obj/Debug/netcoreapp2.0/dotnetapp.csproj.CoreCompileInputs.cache
+/home/alexg/Downloads/dotnet-docker-samples/dotnetapp-prod/obj/Debug/netcoreapp2.0/dotnetapp.AssemblyInfoInputs.cache
+/home/alexg/Downloads/dotnet-docker-samples/dotnetapp-prod/obj/Debug/netcoreapp2.0/dotnetapp.AssemblyInfo.cs
+/home/alexg/Downloads/dotnet-docker-samples/dotnetapp-prod/obj/Debug/netcoreapp2.0/dotnetapp.dll
+/home/alexg/Downloads/dotnet-docker-samples/dotnetapp-prod/obj/Debug/netcoreapp2.0/dotnetapp.pdb

@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>dotnetapp</id>
+    <version>2.1.0</version>
+    <authors>dotnetapp</authors>
+    <owners>dotnetapp</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Package Description</description>
+    <dependencies>
+      <group targetFramework=".NETCoreApp2.0">
+        <dependency id="Microsoft.NETCore.App" version="2.0.0" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="/home/alexg/Downloads/dotnet-docker-samples/dotnetapp-prod/bin/Debug/netcoreapp2.0/dotnetapp.runtimeconfig.json" target="lib/netcoreapp2.0/dotnetapp.runtimeconfig.json" />
+    <file src="/home/alexg/Downloads/dotnet-docker-samples/dotnetapp-prod/bin/Debug/netcoreapp2.0/dotnetapp.dll" target="lib/netcoreapp2.0/dotnetapp.dll" />
+  </files>
+</package>

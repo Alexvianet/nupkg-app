@@ -9,7 +9,7 @@ inputs:
 - name: nupkg-app
   
 outputs:
-- name: nupkg-app/nuget-task-output
+- name: nuget-task-output
 
 
 run:

@@ -23,7 +23,7 @@ jobs:
   - get: nupkg-app
   - task: build-nupkg-app
     file: build.yml
-  - put: file-repository
+  - put: nexus-nuget
     params: { file: ./nupkg-app/ }
 
 - name: trigger-when-new-file-is-added-to-artifactory
@@ -35,5 +35,5 @@ jobs:
       - build-and-save-to-artifactory
   - task: use-new-file
     file: build.yml
-  - put: file-repository
+  - put: nexus-nuget
     params: { file: ./nupkg-app/ }

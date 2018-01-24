@@ -21,8 +21,9 @@ jobs:
 - name: build-and-save-to-artifactory
   plan:
   - get: nupkg-app
+    trigger: true
   - task: build-nupkg-app
-    file: build.yml
+    file: nupkg-app/build.yml
   - put: nexus-nuget
     params: { file: ./nupkg-app/ }
 
@@ -34,6 +35,6 @@ jobs:
     passed:
       - build-and-save-to-artifactory
   - task: use-new-file
-    file: build.yml
+    file: nupkg-app/build.yml
   - put: nexus-nuget
     params: { file: ./nupkg-app/ }

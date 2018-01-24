@@ -30,19 +30,10 @@ jobs:
   serial: true
   public: true
   plan:
-  - get: nexus-nuget
+  - get: nupkg-app
     passed:
       - build-and-save-to-artifactory
   - task: use-new-file
-    config:
-      platform: linux
-      image_resource:
-        type: docker-image
-        source:
-          repository: ubuntu
-          tag: "latest"
-      inputs:
-      - name: nupkg-app
-      file: build.yml
+    file: build.yml
   - put: file-repository
     params: { file: ./nupkg-app/ }

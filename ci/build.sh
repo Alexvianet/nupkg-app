@@ -1,4 +1,5 @@
 #!/bin/bash
+mkdir nupkg-app/nuget-task-output
 cd nupkg-app
-rm -f /tmp/build/*.nupkg
-dotnet pack -o /tmp/build/
+rm -f nuget-task-output/*.nupkg
+dotnet pack -o nuget-task-output/

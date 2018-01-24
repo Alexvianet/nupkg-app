@@ -18,6 +18,7 @@ resources:
   source:
     repository: nuget-public
     package: dotnetapp
+    nugetApiKey: 64b36f6e-f794-3850-9252-3c25ec8698e1
 
 jobs:
 - name: build-and-save-to-artifactory
@@ -27,15 +28,14 @@ jobs:
   - task: build-nupkg-app
     file: nupkg-app/build.yml
   - put: nexus-nuget
-    params: { file: ./nupkg-app/ }
-
 - name: trigger-when-new-file-is-added-to-artifactory
   serial: true
   public: true
   plan:
-  - get: nupkg-app
+  - get: nupkg-nuget
     passed:
       - build-and-save-to-artifactory
+  - get: nupkg-app
   - task: use-new-file
     file: nupkg-app/build.yml
   - put: nexus-nuget

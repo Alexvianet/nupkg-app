@@ -23,14 +23,14 @@ jobs:
   - get: nupkg-app
   - task: build-nupkg-app
     file: build.yml
-
+  - put: file-repository
+    params: { file: ./nupkg-app/ }
 
 - name: trigger-when-new-file-is-added-to-artifactory
   serial: true
   public: true
   plan:
-  - get: file-repository
-    trigger: true
+  - get: nexus-nuget
     passed:
       - build-and-save-to-artifactory
   - task: use-new-file
@@ -42,12 +42,7 @@ jobs:
           repository: ubuntu
           tag: "latest"
       inputs:
-      - name: file-repository
-      run:
-        path: sh
-        args:
-        - -exc
-        - |
-          export DATESTRING=$(date +"%Y%m%d")
-          ls -la file-repository
-          cat ./file-repository/myapp*.txt
+      - name: nupkg-app
+      file: build.yml
+  - put: file-repository
+    params: { file: ./nupkg-app/ }

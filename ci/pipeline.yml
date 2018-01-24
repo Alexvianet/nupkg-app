@@ -28,8 +28,6 @@ jobs:
   - task: build-nupkg-app
     file: nupkg-app/build.yml
   - put: nexus-nuget
-    params:
-      file: /tmp/build/*.nupkg
 - name: trigger-when-new-file-is-added-to-artifactory
   serial: true
   public: true

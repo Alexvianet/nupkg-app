@@ -3,7 +3,7 @@ resource_types:
   type: docker-image
   source:
     repository: docker-registry-gdc.axadmin.net/nexus-repo-nuget
-    insecure_registries: docker-registry-gdc.axadmin.net
+    insecure_registries: [docker-registry-gdc.axadmin.net]
     username: gdc
     password: ueUAEN234!!+!aA
 resources:

@@ -18,3 +18,13 @@
 /home/alexg/Downloads/nupkg-app/obj/Debug/netcoreapp2.0/dotnetapp.AssemblyInfo.cs
 /home/alexg/Downloads/nupkg-app/obj/Debug/netcoreapp2.0/dotnetapp.dll
 /home/alexg/Downloads/nupkg-app/obj/Debug/netcoreapp2.0/dotnetapp.pdb
+/home/alexg/work/pipelines/nupkg-app/bin/Debug/netcoreapp2.0/dotnetapp.deps.json
+/home/alexg/work/pipelines/nupkg-app/bin/Debug/netcoreapp2.0/dotnetapp.runtimeconfig.json
+/home/alexg/work/pipelines/nupkg-app/bin/Debug/netcoreapp2.0/dotnetapp.runtimeconfig.dev.json
+/home/alexg/work/pipelines/nupkg-app/bin/Debug/netcoreapp2.0/dotnetapp.dll
+/home/alexg/work/pipelines/nupkg-app/bin/Debug/netcoreapp2.0/dotnetapp.pdb
+/home/alexg/work/pipelines/nupkg-app/obj/Debug/netcoreapp2.0/dotnetapp.csproj.CoreCompileInputs.cache
+/home/alexg/work/pipelines/nupkg-app/obj/Debug/netcoreapp2.0/dotnetapp.AssemblyInfoInputs.cache
+/home/alexg/work/pipelines/nupkg-app/obj/Debug/netcoreapp2.0/dotnetapp.AssemblyInfo.cs
+/home/alexg/work/pipelines/nupkg-app/obj/Debug/netcoreapp2.0/dotnetapp.dll
+/home/alexg/work/pipelines/nupkg-app/obj/Debug/netcoreapp2.0/dotnetapp.pdb

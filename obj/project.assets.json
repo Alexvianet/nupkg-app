@@ -668,13 +668,13 @@
     "/usr/share/dotnet/sdk/NuGetFallbackFolder": {}
   },
   "project": {
-    "version": "1.0.1",
+    "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/alexg/Downloads/nupkg-app/dotnetapp.csproj",
+      "projectUniqueName": "/home/alexg/work/pipelines/nupkg-app/dotnetapp.csproj",
       "projectName": "dotnetapp",
-      "projectPath": "/home/alexg/Downloads/nupkg-app/dotnetapp.csproj",
+      "projectPath": "/home/alexg/work/pipelines/nupkg-app/dotnetapp.csproj",
       "packagesPath": "/home/alexg/.nuget/packages/",
-      "outputPath": "/home/alexg/Downloads/nupkg-app/obj/",
+      "outputPath": "/home/alexg/work/pipelines/nupkg-app/obj/",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "/usr/share/dotnet/sdk/NuGetFallbackFolder"

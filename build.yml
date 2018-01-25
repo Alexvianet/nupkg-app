@@ -11,7 +11,6 @@ inputs:
 outputs:
 - name: nuget-task-output
 
-
 run:
   path: sh
   args: ["nupkg-app/ci/build.sh"]

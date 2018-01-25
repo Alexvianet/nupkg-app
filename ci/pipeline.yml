@@ -30,6 +30,7 @@ jobs:
     params:
       version: 1.1.0
   - put: nexus-nuget
+    params: { folder: ./nuget-task-output/ }
 - name: trigger-when-new-version-is-added-to-artifactory
   plan:
   - get: nexus-nuget
@@ -42,3 +43,4 @@ jobs:
     params:
       version: 1.1.1
   - put: nexus-nuget
+    params: { folder: ./nuget-task-output/ }

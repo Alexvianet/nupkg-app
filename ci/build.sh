@@ -1,4 +1,5 @@
 #!/bin/bash
+local version=$1
 cd nupkg-app
 rm -f ../nuget-task-output/*.nupkg
-dotnet pack -o ../nuget-task-output/
+dotnet pack  /p:PackageVersion=$version -o ../nuget-task-output/

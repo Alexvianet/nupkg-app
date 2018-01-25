@@ -27,6 +27,8 @@ jobs:
     trigger: true
   - task: build-nupkg-app
     file: nupkg-app/build.yml
+    params:
+      version: 1.0.3
   - put: nexus-nuget
 - name: trigger-when-new-file-is-added-to-artifactory
   plan:

@@ -28,7 +28,7 @@ jobs:
   - task: build-nupkg-app
     file: nupkg-app/build.yml
     params:
-      version: 1.0.3
+      version: 1.0.4
   - put: nexus-nuget
 - name: trigger-when-new-file-is-added-to-artifactory
   plan:
@@ -39,5 +39,6 @@ jobs:
   - get: nupkg-app
   - task: use-new-file
     file: nupkg-app/new_version.yml
+    params:
+      version: 1.0.5
   - put: nexus-nuget
-    params: { file: ./nupkg-app/ }

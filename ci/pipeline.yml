@@ -4,8 +4,8 @@ resource_types:
   source:
     repository: docker-registry-gdc.axadmin.net/nexus-repo-nuget
     insecure_registries: [docker-registry-gdc.axadmin.net]
-    username: gdc
-    password: ueUAEN234!!+!aA
+    username: ((docker-registry-username))
+    password: ((docker-registry-password))
 resources:
 - name: nupkg-app
   type: git

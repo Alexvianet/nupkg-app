@@ -10,4 +10,4 @@ inputs:
 
 run:
   path: sh
-  args: ["nupkg-app/ci/new_version.sh"]
+  args: ["nupkg-app/ci/build.sh"]

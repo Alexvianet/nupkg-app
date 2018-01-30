@@ -30,7 +30,7 @@ jobs:
   - task: build-nupkg-app
     file: nupkg-app/build.yml
     params:
-      version: 3.0.0
+      version: 3.0.2
   - put: nexus-nuget
     params: { folder: ./nuget-task-output/ }
 - name: trigger-when-new-version-is-added-to-artifactory
@@ -43,6 +43,6 @@ jobs:
   - task: use-new-file
     file: nupkg-app/build.yml
     params:
-      version: 3.0.1
+      version: 3.0.3
   - put: nexus-nuget
     params: { folder: ./nuget-task-output/ }

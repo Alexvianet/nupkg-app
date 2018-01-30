@@ -16,9 +16,11 @@ resources:
 - name: nexus-nuget
   type: nexus-repo-nuget
   source:
-    repository: nuget-public
+    repository: https://nexus.audatex.com/nexus/service/local/nuget/audatex-nuget-repo/
     package: dotnetapp
     nugetApiKey: 64b36f6e-f794-3850-9252-3c25ec8698e1
+    user: sa-ww-gdc-cf-dev@audatex.com
+    password: S0l3er@P@sSw0rd92!E
 
 jobs:
 - name: build-and-save-to-artifactory
@@ -28,7 +30,7 @@ jobs:
   - task: build-nupkg-app
     file: nupkg-app/build.yml
     params:
-      version: 1.1.0
+      version: 2.2.0
   - put: nexus-nuget
     params: { folder: ./nuget-task-output/ }
 - name: trigger-when-new-version-is-added-to-artifactory
@@ -41,6 +43,6 @@ jobs:
   - task: use-new-file
     file: nupkg-app/build.yml
     params:
-      version: 1.1.1
+      version: 2.2.1
   - put: nexus-nuget
     params: { folder: ./nuget-task-output/ }

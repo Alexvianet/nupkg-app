@@ -19,7 +19,7 @@ resources:
     repository: https://nexus.audatex.com/nexus/service/local/nuget/audatex-nuget-repo/
     package: dotnetapp
     nugetApiKey: 64b36f6e-f794-3850-9252-3c25ec8698e1
-    user: sa-ww-gdc-cf-dev@audatex.com
+    user: sa-ww-gdc-cf-dev@audatex.co
     password: S0l3er@P@sSw0rd92!E
 
 jobs:
